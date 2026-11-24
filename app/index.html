@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fakka</title>
+  <meta name="description" content="Fakka wallet: receive, spend and send your small change.">
+  <meta name="theme-color" content="#0f8a5f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/base.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="../" data-i18n-aria="nav.home">
+        <span class="coin-mark" aria-hidden="true">ف</span>
+        <span data-i18n="brand">Fakka</span>
+      </a>
+      <div class="topbar-actions">
+        <button class="lang-toggle" data-lang-toggle type="button" data-i18n="lang.switch">العربية</button>
+        <button class="icon-btn" id="logout" type="button" hidden data-i18n-aria="logout" title="Switch account">⇄</button>
+      </div>
+    </header>
+
+    <main id="view" class="view" aria-live="polite"></main>
+  </div>
+
+  <!-- Bottom sheet used for every action -->
+  <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+  <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <div class="sheet-head">
+      <h2 id="sheet-title"></h2>
+      <button class="icon-btn" id="sheet-close" type="button" data-i18n-aria="close">✕</button>
+    </div>
+    <div id="sheet-body"></div>
+  </section>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="strings.js"></script>
+  <script src="../assets/i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

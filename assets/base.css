@@ -1,0 +1,96 @@
+/* Fakka shared design tokens — used by the website and the app */
+:root {
+  --bg: #f6f7f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ec;
+  --text: #13201a;
+  --muted: #5b6b62;
+  --border: #dfe5dd;
+  --brand: #0f8a5f;
+  --brand-strong: #0a6c4a;
+  --brand-soft: #dff3ea;
+  --coin: #e8a317;
+  --coin-soft: #fdf1d6;
+  --danger: #c2410c;
+  --on-brand: #ffffff;
+  --shadow: 0 10px 30px rgba(15, 40, 25, 0.08);
+  --radius: 18px;
+  --radius-sm: 12px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1411;
+    --surface: #141e19;
+    --surface-2: #1b2822;
+    --text: #e8efe9;
+    --muted: #9db0a5;
+    --border: #26362e;
+    --brand: #2fbf87;
+    --brand-strong: #5ad6a3;
+    --brand-soft: #173a2c;
+    --coin: #f2b83a;
+    --coin-soft: #3a2f14;
+    --danger: #fb923c;
+    --on-brand: #04130c;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1411;
+  --surface: #141e19;
+  --surface-2: #1b2822;
+  --text: #e8efe9;
+  --muted: #9db0a5;
+  --border: #26362e;
+  --brand: #2fbf87;
+  --brand-strong: #5ad6a3;
+  --brand-soft: #173a2c;
+  --coin: #f2b83a;
+  --coin-soft: #3a2f14;
+  --danger: #fb923c;
+  --on-brand: #04130c;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Cairo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+img, svg { max-width: 100%; display: block; }
+a { color: var(--brand-strong); }
+button, input, select { font: inherit; color: inherit; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  padding: .75rem 1.3rem; border-radius: 999px; border: 1px solid transparent;
+  font-weight: 700; text-decoration: none; cursor: pointer;
+  transition: transform .15s ease, background .15s ease;
+}
+.btn:active { transform: scale(.97); }
+.btn-primary { background: var(--brand); color: var(--on-brand); }
+.btn-primary:hover { background: var(--brand-strong); }
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--border); }
+.btn-ghost:hover { background: var(--surface-2); }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+.lang-toggle {
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  border-radius: 999px; padding: .4rem .9rem; font-weight: 700; cursor: pointer;
+}
+
+.coin-mark {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffd978, var(--coin) 60%, #b97c06);
+  display: grid; place-items: center; color: #4a3200; font-weight: 900;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.15);
+}
+:focus-visible { outline: 3px solid var(--coin); outline-offset: 2px; }

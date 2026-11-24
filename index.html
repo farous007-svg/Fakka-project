@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fakka — Your change, digitally</title>
+  <meta name="description" content="Fakka lets shops give your small change digitally — no more candy instead of coins.">
+  <meta name="theme-color" content="#0f8a5f">
+  <link rel="icon" href="app/icons/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Fakka">
+        <span class="coin-mark" aria-hidden="true">ف</span>
+        <span class="brand-name" data-i18n="brand">Fakka</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#merchants" data-i18n="nav.merchants">For merchants</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-toggle" data-lang-toggle type="button" data-i18n="lang.switch">العربية</button>
+        <a class="btn btn-primary nav-cta" href="app/" data-i18n="cta.tryApp">Try the app</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="pill" data-i18n="hero.pill">No coins? No problem.</span>
+          <h1 data-i18n="hero.title">Your change, digitally.</h1>
+          <p class="lead" data-i18n="hero.lead">When the shop has no small change, Fakka sends it straight to your phone. No more candy, tissues, or "keep it" — every piaster is yours.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="app/" data-i18n="cta.tryApp">Try the app</a>
+            <a class="btn btn-ghost" href="#waitlist" data-i18n="cta.waitlist">Join the waitlist</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong data-i18n="stat1.v">3 sec</strong><span data-i18n="stat1.l">to receive change</span></li>
+            <li><strong data-i18n="stat2.v">0 fees</strong><span data-i18n="stat2.l">for customers</span></li>
+            <li><strong data-i18n="stat3.v">Any phone</strong><span data-i18n="stat3.l">QR or phone number</span></li>
+          </ul>
+        </div>
+
+        <div class="phone" aria-hidden="true">
+          <div class="phone-screen">
+            <div class="ps-top">
+              <span class="coin-mark small">ف</span>
+              <span class="ps-hello" data-i18n="mock.hello">Hi, Mona</span>
+            </div>
+            <div class="ps-balance">
+              <span data-i18n="mock.balance">Fakka balance</span>
+              <strong data-i18n="mock.amount">EGP 37.75</strong>
+            </div>
+            <div class="ps-toast">
+              <span class="coin-mark small">+</span>
+              <div>
+                <strong data-i18n="mock.toastT">+ EGP 3.50 received</strong>
+                <small data-i18n="mock.toastS">Change from El-Nour Market</small>
+              </div>
+            </div>
+            <div class="ps-actions">
+              <span data-i18n="mock.pay">Pay</span>
+              <span data-i18n="mock.send">Send</span>
+              <span data-i18n="mock.donate">Donate</span>
+            </div>
+            <ul class="ps-list">
+              <li><span data-i18n="mock.t1">Kiosk Abu Ali</span><b>+1.25</b></li>
+              <li><span data-i18n="mock.t2">Metro ticket</span><b class="neg">−5.00</b></li>
+              <li><span data-i18n="mock.t3">Pharmacy Shifa</span><b>+0.75</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section problem">
+      <div class="container narrow center">
+        <h2 data-i18n="problem.title">Small change is a big problem</h2>
+        <p data-i18n="problem.body">Every day, millions of small purchases end with "sorry, no change". Customers lose money, shops lose trust, and everyone wastes time hunting for coins.</p>
+        <div class="problem-grid">
+          <div class="card"><span class="emoji" aria-hidden="true">🍬</span><p data-i18n="problem.p1">Candy handed out instead of coins</p></div>
+          <div class="card"><span class="emoji" aria-hidden="true">⏳</span><p data-i18n="problem.p2">Queues held up while shops look for change</p></div>
+          <div class="card"><span class="emoji" aria-hidden="true">💸</span><p data-i18n="problem.p3">Piasters rounded away, every single day</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="center" data-i18n="how.title">How it works</h2>
+        <ol class="steps">
+          <li class="card step">
+            <span class="step-n">1</span>
+            <h3 data-i18n="how.s1t">Pay in cash</h3>
+            <p data-i18n="how.s1b">Buy something for EGP 46.50 and pay with a 50 note, as usual.</p>
+          </li>
+          <li class="card step">
+            <span class="step-n">2</span>
+            <h3 data-i18n="how.s2t">Show your Fakka code</h3>
+            <p data-i18n="how.s2b">The cashier scans your QR code or types in your phone number.</p>
+          </li>
+          <li class="card step">
+            <span class="step-n">3</span>
+            <h3 data-i18n="how.s3t">Change lands in your wallet</h3>
+            <p data-i18n="how.s3b">EGP 3.50 arrives instantly. Spend it, send it to a friend, or donate it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Audiences -->
+    <section class="section alt" id="merchants">
+      <div class="container two-col">
+        <div class="card audience">
+          <span class="tag" data-i18n="aud.cTag">For customers</span>
+          <h3 data-i18n="aud.cTitle">Every piaster counts</h3>
+          <ul class="checks">
+            <li data-i18n="aud.c1">Collect change from any Fakka shop</li>
+            <li data-i18n="aud.c2">Pay with your balance at the next shop</li>
+            <li data-i18n="aud.c3">Send fakka to friends and family</li>
+            <li data-i18n="aud.c4">Round up for charity with one tap</li>
+          </ul>
+        </div>
+        <div class="card audience merchant">
+          <span class="tag coin" data-i18n="aud.mTag">For merchants</span>
+          <h3 data-i18n="aud.mTitle">Never say "no change" again</h3>
+          <ul class="checks">
+            <li data-i18n="aud.m1">Give exact change in seconds, with no coins needed</li>
+            <li data-i18n="aud.m2">Built-in change calculator at the till</li>
+            <li data-i18n="aud.m3">Daily summary of every change sent</li>
+            <li data-i18n="aud.m4">Top up your float from your bank or mobile wallet</li>
+          </ul>
+          <a class="btn btn-primary" href="app/?role=merchant" data-i18n="aud.mCta">Open merchant mode</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <h2 class="center" data-i18n="feat.title">Built for everyday life</h2>
+        <div class="features">
+          <div class="feature"><span class="f-ic" aria-hidden="true">⚡</span><h3 data-i18n="feat.f1t">Instant</h3><p data-i18n="feat.f1b">Change arrives the moment the cashier taps send.</p></div>
+          <div class="feature"><span class="f-ic" aria-hidden="true">🔒</span><h3 data-i18n="feat.f2t">Secure</h3><p data-i18n="feat.f2b">PIN-protected wallet and a full history of every transaction.</p></div>
+          <div class="feature"><span class="f-ic" aria-hidden="true">📱</span><h3 data-i18n="feat.f3t">Works anywhere</h3><p data-i18n="feat.f3b">Install it from the browser. No app store needed.</p></div>
+          <div class="feature"><span class="f-ic" aria-hidden="true">🤲</span><h3 data-i18n="feat.f4t">Give back</h3><p data-i18n="feat.f4b">Turn leftover piasters into donations to trusted charities.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt" id="faq">
+      <div class="container narrow">
+        <h2 class="center" data-i18n="faq.title">Questions</h2>
+        <details class="faq"><summary data-i18n="faq.q1">Do I need a bank account?</summary><p data-i18n="faq.a1">No. All you need is a phone number. Your Fakka wallet holds your balance.</p></details>
+        <details class="faq"><summary data-i18n="faq.q2">Is there a minimum or maximum?</summary><p data-i18n="faq.a2">Fakka is designed for small change, from 25 piasters up to EGP 20 per transaction.</p></details>
+        <details class="faq"><summary data-i18n="faq.q3">Can I cash out?</summary><p data-i18n="faq.a3">Yes. Once your balance reaches EGP 50 you can move it to a mobile wallet or bank account.</p></details>
+        <details class="faq"><summary data-i18n="faq.q4">What does it cost merchants?</summary><p data-i18n="faq.a4">Merchants top up a change float. Pricing will be announced at launch.</p></details>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="section" id="waitlist">
+      <div class="container narrow">
+        <div class="card cta-card">
+          <h2 data-i18n="wl.title">Be first in line</h2>
+          <p data-i18n="wl.body">Join the waitlist and we'll let you know when Fakka launches in your area.</p>
+          <form class="wl-form" id="wl-form">
+            <label class="sr-only" for="wl-phone" data-i18n="wl.label">Phone or email</label>
+            <input id="wl-phone" name="contact" required data-i18n-placeholder="wl.ph" placeholder="Phone or email">
+            <select name="type" aria-label="I am a">
+              <option value="customer" data-i18n="wl.customer">I'm a customer</option>
+              <option value="merchant" data-i18n="wl.merchant">I'm a merchant</option>
+            </select>
+            <button class="btn btn-primary" type="submit" data-i18n="wl.submit">Join waitlist</button>
+          </form>
+          <p class="wl-done" id="wl-done" hidden data-i18n="wl.done">Thanks! You're on the list.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand"><span class="coin-mark small" aria-hidden="true">ف</span><span data-i18n="brand">Fakka</span></div>
+      <p data-i18n="footer.copy">© 2026 Fakka. Your change, digitally.</p>
+    </div>
+  </footer>
+
+  <script src="assets/site-strings.js"></script>
+  <script src="assets/i18n.js"></script>
+  <script>
+    // Waitlist: prototype only. Stores submissions locally until a backend exists.
+    document.getElementById("wl-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(this));
+      try {
+        const list = JSON.parse(localStorage.getItem("fakka.waitlist") || "[]");
+        list.push({ ...data, at: new Date().toISOString() });
+        localStorage.setItem("fakka.waitlist", JSON.stringify(list));
+      } catch (_) {}
+      this.hidden = true;
+      document.getElementById("wl-done").hidden = false;
+    });
+  </script>
+</body>
+</html>

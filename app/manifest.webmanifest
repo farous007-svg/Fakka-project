@@ -1,0 +1,13 @@
+{
+  "name": "Fakka — Your change, digitally",
+  "short_name": "Fakka",
+  "description": "Receive, spend, send and donate your small change.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f7f4",
+  "theme_color": "#0f8a5f",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
